@@ -2,7 +2,7 @@ function buildUI(thisObj) {
     thisUI = (thisObj instanceof Panel ? thisObj : new Window("palette", "Old Version Noise Applier", undefined, {
         resizeable: true
     }));
-    var res = "group{orientation:'column',\
+    var res = "group{orientation:'column',margins:0, spacing:0,alignment:'left',\
         Amount: Panel{orientation:'row',\
 			text: \"Amount of Noise\",\
             slider: Slider{minvalue:0,maxvalue:100},\
